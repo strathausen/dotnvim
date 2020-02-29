@@ -41,19 +41,30 @@ Plug 'tpope/vim-surround'
 "Plug 'svermeulen/vim-cutlass'
 " Make . work for some other plugins
 Plug 'tpope/vim-repeat'
-
+" Unix commands in vim
+Plug 'tpope/vim-eunuch'
+" Auto close HTML tags
+Plug 'alvan/vim-closetag'
 
 " Syntax Highlighting
 " ===================
 
 Plug 'HerringtonDarkholme/yats.vim' " Typescript
 Plug 'nelsyeung/twig.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'kchmck/vim-coffee-script'
+Plug 'jparise/vim-graphql'
+Plug 'posva/vim-vue'
+Plug 'digitaltoad/vim-pug'
 "Plug 'kchmck/vim-coffee-script'
 "Plug 'pangloss/vim-javascript'
 "Plug 'isRuslan/vim-es6'
 Plug 'othree/yajs.vim'
 "Plug 'jelera/vim-javascript-syntax'
 "Plug 'posva/vim-vue'
+Plug 'mustache/vim-mustache-handlebars'
+" Stylus CSS syntax
+Plug 'iloginow/vim-stylus'
 
 
 " tmux interoperation
@@ -63,8 +74,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdcommenter'
 
 " Git integration
-Plug 'mhinz/vim-signify'
+"Plug 'mhinz/vim-signify'
 "Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Autocompletion
 " ==============
