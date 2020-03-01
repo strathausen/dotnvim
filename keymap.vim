@@ -76,7 +76,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :NERDTree<CR>:NERDTreeClose<CR>:NERDTreeFind<CR>
 
 " File finding, fzf
-nnoremap <c-p> :GFiles<CR>
+nnoremap <c-p> :GFiles --cached --others --exclude-standard<CR>
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
 xmap <leader>a <Plug>(coc-codeaction-selected)
