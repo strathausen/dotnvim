@@ -24,10 +24,15 @@ Plug 'junegunn/fzf.vim'
 " Themes
 " ======
 
-"Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'kjssad/quantum.vim', { 'as': 'quantum' }
 Plug 'aonemd/kuroi.vim', { 'as': 'kuroi' }
 "Plug 'nanotech/jellybeans.vim', { 'as': 'jellybeans' }
+Plug 'NLKNguyen/papercolor-theme', { 'as': 'papercolor' }
+"Plug 'ParamagicDev/vim-medic_chalk', { 'as': 'medic_chalk' }
+"Plug 'tpope/vim-vividchalk', { 'as': 'vividchalk' }
+"Plug 'arzg/vim-colors-xcode', { 'as': 'xcode' }
+Plug 'eemed/sitruuna.vim', { 'as': 'sitruuna' }
 
 
 " Plugins

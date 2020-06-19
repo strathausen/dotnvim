@@ -5,9 +5,14 @@ source ~/.config/nvim/keymap.vim
 " Appearance
 set termguicolors       " enable true colors support
 set background=dark     " dark theme
+"set background=light     " dark theme
 
+"colorscheme sitruuna
+colorscheme PaperColor
+
+"colorscheme kuroi
 "colorscheme quantum
-colorscheme kuroi
+"colorscheme jellybeans
 " unfortunately, kuroi dark inverts the cursor when matching parents
 "NoMatchParen
 "let g:dracula_italic=0
@@ -85,6 +90,8 @@ set sidescrolloff=5
 " auto-save on focus change
 autocmd BufLeave,FocusLost * silent! wall
 
+"autocmd FileType javascript setlocal ft=typescript
+
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
@@ -95,5 +102,10 @@ command! -nargs=? Fold :call CocAction('fold', <f-args>)
 command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport')
 
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+" f (file path), m (modified flag), r (readonly flag), h (help buffer),
+" w (preview flag), v (column number), l (line number)
+set statusline=%f%m%r%h%w\ %3v,%3l
+"set statusline^=%{coc#status()}
+"%{get(b:,'coc_current_function','')}
+let g:vue_pre_processors = 'detect_on_enter'
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
