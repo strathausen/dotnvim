@@ -109,3 +109,8 @@ set statusline=%f%m%r%h%w\ %3v,%3l
 "%{get(b:,'coc_current_function','')}
 let g:vue_pre_processors = 'detect_on_enter'
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+" Disable markdown folding by plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled = 1
+
+let NERDTreeIgnore=['__pycache__']

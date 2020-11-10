@@ -36,7 +36,7 @@ Plug 'eemed/sitruuna.vim', { 'as': 'sitruuna' }
 
 
 " Plugins
-" =======
+" =========
 
 " Date increment and decrement
 Plug 'tpope/vim-speeddating'
@@ -50,9 +50,14 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-eunuch'
 " Auto close HTML tags
 Plug 'alvan/vim-closetag'
+" Auto close [{(
+Plug 'jiangmiao/auto-pairs'
+" Python objects if, af, ic, ac
+Plug 'jeetsukumaran/vim-pythonsense'
+
 
 " Syntax Highlighting
-" ===================
+" =====================
 
 Plug 'HerringtonDarkholme/yats.vim' " Typescript
 Plug 'nelsyeung/twig.vim'
@@ -70,6 +75,14 @@ Plug 'othree/yajs.vim'
 Plug 'mustache/vim-mustache-handlebars'
 " Stylus CSS syntax
 Plug 'iloginow/vim-stylus'
+" Semantic highlighting for Python
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+" Python inline SQL highlighting
+Plug 'MathSquared/vim-python-sql'
+" Aligning text
+Plug 'godlygeek/tabular'
+" Better markdown highlighting
+Plug 'plasticboy/vim-markdown'
 
 
 " tmux interoperation
