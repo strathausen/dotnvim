@@ -8,7 +8,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Easy aligning in vim, see https://github.com/junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align'
+"Plug 'junegunn/vim-easy-align'
 
 " Sensible vim defaults
 Plug 'tpope/vim-sensible'
@@ -20,58 +20,84 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" Distraction-free writing, :Goyo or :Goyo!
+Plug 'junegunn/goyo.vim'
 
+
+" ======
 " Themes
 " ======
 
-Plug 'dracula/vim', { 'as': 'dracula' }
-"Plug 'kjssad/quantum.vim', { 'as': 'quantum' }
-Plug 'aonemd/kuroi.vim', { 'as': 'kuroi' }
-"Plug 'nanotech/jellybeans.vim', { 'as': 'jellybeans' }
-Plug 'NLKNguyen/papercolor-theme', { 'as': 'papercolor' }
-"Plug 'ParamagicDev/vim-medic_chalk', { 'as': 'medic_chalk' }
-"Plug 'tpope/vim-vividchalk', { 'as': 'vividchalk' }
-"Plug 'arzg/vim-colors-xcode', { 'as': 'xcode' }
 Plug 'eemed/sitruuna.vim', { 'as': 'sitruuna' }
+"Plug 'pierrecapo/night-owl'
+"Plug 'artanikin/vim-synthwave84', { 'as': 'synthwave84' }
+"Plug 'jaredgorski/spacecamp'
+"Plug 'NLKNguyen/papercolor-theme', { 'as': 'papercolor' }
+"Plug 'tpope/vim-vividchalk', { 'as': 'vividchalk' }
+"Plug 'aonemd/kuroi.vim', { 'as': 'kuroi' }
+"Plug 'dracula/vim', { 'as': 'dracula' }
+"Plug 'nanotech/jellybeans.vim', { 'as': 'jellybeans' }
+"Plug 'arzg/vim-colors-xcode', { 'as': 'xcode' }
+Plug 'ghifarit53/tokyonight-vim', { 'as': 'tokyonight' }
 
-
+" =======
 " Plugins
-" =========
+" =======
 
 " Date increment and decrement
 Plug 'tpope/vim-speeddating'
-"Plug 'tpope/vim-unimpaired'
 " Easy surround management
 Plug 'tpope/vim-surround'
+" Cutlass overrides the delete operations to actually just delete and not affect the current yank.
 "Plug 'svermeulen/vim-cutlass'
 " Make . work for some other plugins
 Plug 'tpope/vim-repeat'
 " Unix commands in vim
 Plug 'tpope/vim-eunuch'
 " Auto close HTML tags
-Plug 'alvan/vim-closetag'
+"Plug 'alvan/vim-closetag'
 " Auto close [{(
 Plug 'jiangmiao/auto-pairs'
 " Python objects if, af, ic, ac
 Plug 'jeetsukumaran/vim-pythonsense'
+" Personal wiki
+"Plug 'vimwiki/vimwiki'
+" Snippets engine
+Plug 'SirVer/ultisnips'
+" Snippets repository
+Plug 'honza/vim-snippets'
+
+" tmux interoperation (c-h, c-j, ...)
+Plug 'christoomey/vim-tmux-navigator'
+
+" Commenting
+Plug 'scrooloose/nerdcommenter'
+
+" Git integration
+"Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+"Plug 'airblade/vim-gitgutter'
 
 
+" ===================
 " Syntax Highlighting
-" =====================
+" ===================
 
-Plug 'HerringtonDarkholme/yats.vim' " Typescript
-Plug 'nelsyeung/twig.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'kchmck/vim-coffee-script'
-Plug 'jparise/vim-graphql'
+"Plug 'jparise/vim-graphql'
 Plug 'posva/vim-vue'
 Plug 'digitaltoad/vim-pug'
-"Plug 'kchmck/vim-coffee-script'
-"Plug 'pangloss/vim-javascript'
-"Plug 'isRuslan/vim-es6'
-Plug 'othree/yajs.vim'
-"Plug 'jelera/vim-javascript-syntax'
-"Plug 'posva/vim-vue'
+" ocaml, reason, rescript
+Plug 'jordwalke/vim-reasonml'
+
+" JavaScript, TypeScript, etc
+"Plug 'othree/yajs.vim'
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim' " Typescript
+"Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+
 Plug 'mustache/vim-mustache-handlebars'
 " Stylus CSS syntax
 Plug 'iloginow/vim-stylus'
@@ -80,21 +106,10 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " Python inline SQL highlighting
 Plug 'MathSquared/vim-python-sql'
 " Aligning text
-Plug 'godlygeek/tabular'
+"Plug 'godlygeek/tabular'
 " Better markdown highlighting
 Plug 'plasticboy/vim-markdown'
 
-
-" tmux interoperation
-Plug 'christoomey/vim-tmux-navigator'
-
-" Commenting
-Plug 'scrooloose/nerdcommenter'
-
-" Git integration
-"Plug 'mhinz/vim-signify'
-"Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
 
 " Autocompletion
 " ==============

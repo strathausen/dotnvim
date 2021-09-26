@@ -8,7 +8,9 @@ set background=dark     " dark theme
 "set background=light     " dark theme
 
 "colorscheme sitruuna
-colorscheme PaperColor
+colorscheme tokyonight
+"colorscheme spacecamp
+"colorscheme synthwave84
 
 "colorscheme kuroi
 "colorscheme quantum
@@ -26,10 +28,6 @@ colorscheme PaperColor
 " if hidden is not set, TextEdit might fail.
 set hidden
 
-" Some servers have issues with backup files, see #649
-set nobackup
-set nowritebackup
-
 " Better display for messages
 set cmdheight=2
 
@@ -41,6 +39,8 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+" Some themes (like sitruuna) seem to alter the signcolumn color
+highlight clear SignColumn
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
@@ -67,7 +67,7 @@ set mouse=a
 
 " highlight search terms
 set hlsearch
-hi Search guibg=Khaki guifg=Black gui=NONE
+"hi Search guibg=Khaki guifg=Black gui=NONE
 
 " start searching while typing the search word
 set incsearch
@@ -107,6 +107,7 @@ command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport
 set statusline=%f%m%r%h%w\ %3v,%3l
 "set statusline^=%{coc#status()}
 "%{get(b:,'coc_current_function','')}
+
 let g:vue_pre_processors = 'detect_on_enter'
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
@@ -114,3 +115,12 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 let g:vim_markdown_folding_disabled = 1
 
 let NERDTreeIgnore=['__pycache__']
+
+
+" Trigger configuration.
+let g:UltiSnipsExpandTrigger="<c-k>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-m>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
