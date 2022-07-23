@@ -85,6 +85,7 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'hail2u/vim-css3-syntax'
 Plug 'kchmck/vim-coffee-script'
+Plug 'pantharshit00/vim-prisma'
 "Plug 'jparise/vim-graphql'
 Plug 'posva/vim-vue'
 Plug 'digitaltoad/vim-pug'
