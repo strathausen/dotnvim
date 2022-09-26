@@ -38,12 +38,17 @@ Plug 'eemed/sitruuna.vim', { 'as': 'sitruuna' }
 "Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'nanotech/jellybeans.vim', { 'as': 'jellybeans' }
 "Plug 'arzg/vim-colors-xcode', { 'as': 'xcode' }
-Plug 'ghifarit53/tokyonight-vim', { 'as': 'tokyonight' }
+"Plug 'ghifarit53/tokyonight-vim', { 'as': 'tokyonight' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " =======
 " Plugins
 " =======
 
+" Prisma 2 syntax
+Plug 'pantharshit00/vim-prisma'
+" Recipe language
+Plug 'luizribeiro/vim-cooklang', { 'for': 'cook' }
 " Date increment and decrement
 Plug 'tpope/vim-speeddating'
 " Easy surround management
@@ -91,6 +96,7 @@ Plug 'posva/vim-vue'
 Plug 'digitaltoad/vim-pug'
 " ocaml, reason, rescript
 Plug 'jordwalke/vim-reasonml'
+Plug 'jparise/vim-graphql'
 
 " JavaScript, TypeScript, etc
 "Plug 'othree/yajs.vim'
