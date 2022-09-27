@@ -8,7 +8,7 @@ set background=dark     " dark theme
 "set background=light     " dark theme
 
 "colorscheme sitruuna
-colorscheme tokyonight-moon
+colorscheme tokyonight-moon "moon
 "colorscheme spacecamp
 "colorscheme synthwave84
 

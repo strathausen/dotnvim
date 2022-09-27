@@ -40,6 +40,7 @@ Plug 'eemed/sitruuna.vim', { 'as': 'sitruuna' }
 "Plug 'arzg/vim-colors-xcode', { 'as': 'xcode' }
 "Plug 'ghifarit53/tokyonight-vim', { 'as': 'tokyonight' }
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'rafamadriz/neon', { 'as': 'neon' }
 
 " =======
 " Plugins
