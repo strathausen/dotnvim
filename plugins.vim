@@ -82,7 +82,7 @@ Plug 'scrooloose/nerdcommenter'
 " Git integration
 "Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
-"Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 
 
 " ===================
